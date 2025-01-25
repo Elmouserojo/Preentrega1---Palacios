@@ -2,9 +2,9 @@
 const menu = [
   { nombre: "Pizza", precio: 5000 },
   { nombre: "Hamburguesa", precio: 5500 },
-  { nombre: "Papas", precio: 3500 },
-  { nombre: "Ensalada", precio: 2000 },
-  { nombre: "Cerveza", precio: 2000 },
+  { nombre: "Papafritas", precio: 3500 },
+  { nombre: "Ensalada", precio: 1800 },
+  { nombre: "Cerveza", precio: 3000 },
 ];
 
 // Función para mostrar el menú
@@ -16,7 +16,7 @@ function mostrarMenu() {
   return menuTexto;
 }
 
-// Simulador del menú
+// Simulador del pedidos
 function simuladorMenu() {
   alert("¡Bienvenido al simulador de pedidos.");
 
@@ -24,7 +24,7 @@ function simuladorMenu() {
     while (seguir) {
     const menuTexto = mostrarMenu();
     const eleccion = prompt(
-      menuTexto + "\nElegí un número del menú (1 a " + (menu.length) + "):"
+      menuTexto + "\nElegí un número del menú (del 1 al " + (menu.length) + "):"
     );
 
     const indice = parseInt(eleccion) - 1;
